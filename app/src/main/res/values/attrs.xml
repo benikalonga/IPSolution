@@ -1,0 +1,137 @@
+<resources>
+
+    <declare-styleable name="TextViewTeach">
+        <attr name="police" format="enum">
+            <enum name="roboto_bold" value="1" />
+            <enum name="roboto_bold2" value="2" />
+            <enum name="roboto_black" value="3" />
+            <enum name="roboto_light" value="4" />
+            <enum name="roboto_reg" value="5" />
+            <enum name="sail_regular" value="6" />
+            <enum name="sofia_regular" value="7" />
+            <enum name="pacifio" value="8" />
+            <enum name="lemonchi" value="9" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="EditTextTeach">
+        <attr name="police_ed" format="enum">
+            <enum name="roboto_bold" value="1" />
+            <enum name="roboto_bold2" value="2" />
+            <enum name="roboto_black" value="3" />
+            <enum name="roboto_light" value="4" />
+            <enum name="roboto_reg" value="5" />
+            <enum name="sail_regular" value="6" />
+            <enum name="sofia_regular" value="7" />
+            <enum name="pacifio" value="8" />
+            <enum name="lemonchi" value="9" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="ViewBK">
+        <attr name="percent_heigth" format="integer"/>
+        <attr name="percent_width" format="integer"/>
+        <attr name="ration_with" format="enum">
+            <enum name="width_value" value="1" />
+            <enum name="height_value" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="ViewPagerCustom">
+        <attr name="vp_touch_enagle" format="boolean"/>
+        <attr name="vp_orientation" format="enum">
+            <enum name="horizontal" value="1"/>
+            <enum name="vertical" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <!--FancyButtonBK-->
+    <declare-styleable name="FancyButtonBK">
+        <attr name="android:enabled"/>
+        <attr name="android:text"/>
+        <attr name="android:textSize"/>
+        <attr name="android:textAllCaps"/>
+        <attr format="color" name="fb_defaultColor"/>
+        <attr format="string" name="fb_text"/>
+        <attr format="color" name="fb_textColor"/>
+        <attr format="color" name="fb_iconColor"/>
+        <attr format="string" name="fb_textFont"/>
+        <attr format="string" name="fb_iconFont"/>
+        <attr format="dimension" name="fb_textSize"/>
+        <attr format="reference" name="fb_iconResource"/>
+        <attr format="string" name="fb_fontIconResource"/>
+        <attr format="dimension" name="fb_fontIconSize"/>
+        <attr format="enum" name="fb_iconPosition">
+            <enum name="left" value="1"/>
+            <enum name="right" value="2"/>
+            <enum name="top" value="3"/>
+            <enum name="bottom" value="4"/>
+        </attr>
+        <attr format="enum" name="fb_textPosition">
+            <enum name="left" value="1"/>
+            <enum name="right" value="2"/>
+            <enum name="top" value="3"/>
+            <enum name="bottom" value="4"/>
+        </attr>
+        <attr format="enum" name="fb_textGravity">
+            <enum name="top" value="0x30"/>
+            <enum name="bottom" value="0x50"/>
+            <enum name="left" value="0x03"/>
+            <enum name="right" value="0x05"/>
+            <enum name="center_vertical" value="0x10"/>
+            <enum name="fill_vertical" value="0x70"/>
+            <enum name="center_horizontal" value="0x01"/>
+            <enum name="fill_horizontal" value="0x07"/>
+            <enum name="center" value="0x11"/>
+            <enum name="fill" value="0x77"/>
+            <enum name="clip_vertical" value="0x80"/>
+            <enum name="clip_horizontal" value="0x08"/>
+            <enum name="start" value="0x00800003"/>
+            <enum name="end" value="0x00800005"/>
+        </attr>
+        <attr format="dimension" name="fb_iconPaddingLeft"/>
+        <attr format="dimension" name="fb_iconPaddingRight"/>
+        <attr format="dimension" name="fb_iconPaddingTop"/>
+        <attr format="dimension" name="fb_iconPaddingBottom"/>
+        <attr format="dimension" name="fb_radiusTopLeft"/>
+        <attr format="dimension" name="fb_radiusTopRight"/>
+        <attr format="dimension" name="fb_radiusBottomLeft"/>
+        <attr format="dimension" name="fb_radiusBottomRight"/>
+        <attr format="color" name="fb_borderColor"/>
+        <attr format="dimension" name="fb_borderWidth"/>
+        <attr format="color" name="fb_focusColor"/>
+        <attr format="color" name="fb_disabledColor"/>
+        <attr format="color" name="fb_disabledTextColor"/>
+        <attr format="color" name="fb_disabledBorderColor"/>
+        <attr format="dimension" name="fb_radius"/>
+        <attr format="boolean" name="fb_textAllCaps"/>
+        <attr format="boolean" name="fb_ghost"/>
+        <attr format="boolean" name="fb_useSystemFont"/>
+    </declare-styleable>
+
+     <!--FancyLayoutBK-->
+    <declare-styleable name="FancyLayoutBK">
+        <attr name="android:enabled"/>
+        <attr format="dimension" name="fl_radiusTopLeft"/>
+        <attr format="dimension" name="fl_radiusTopRight"/>
+        <attr format="dimension" name="fl_radiusBottomLeft"/>
+        <attr format="dimension" name="fl_radiusBottomRight"/>
+        <attr format="color" name="fl_borderColor"/>
+        <attr format="color" name="fl_defaultColor"/>
+        <attr format="dimension" name="fl_borderWidth"/>
+        <attr format="color" name="fl_focusColor"/>
+        <attr format="color" name="fl_disabledColor"/>
+        <attr format="color" name="fl_disabledBorderColor"/>
+        <attr format="dimension" name="fl_radius"/>
+        <attr format="boolean" name="fl_ghost"/>
+    </declare-styleable>
+
+    <!--RecyclerViewBK-->
+    <declare-styleable name="RecyclerViewBK">
+        <attr name="recycler_emptyview" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundWaveView">
+        <attr name="pointCount" format="integer" />
+        <attr name="speedInMillis" format="integer" />
+        <attr name="useAnimation" format="boolean" />
+        <attr name="fillColor" format="color" />
+    </declare-styleable>
+</resources>

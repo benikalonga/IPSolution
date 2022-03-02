@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/viewRoot"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:background="@color/welcomeDefault">
+
+    <ImageView
+        android:layout_width="@dimen/len_128"
+        android:layout_height="@dimen/len_128"
+        android:src="@drawable/ic_tres_bien"
+        android:padding="@dimen/len_6"
+        android:layout_gravity="center"
+        />
+
+    <com.epsilonpros.ipsolution.views.TextViewTeach
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_four_titre"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_28"
+        app:police="roboto_bold"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/len_32"
+        >
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/len_64"
+            android:src="@drawable/ic_person"
+            android:padding="@dimen/len_6"
+            />
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/len_64"
+            >
+            <ImageView
+                android:layout_width="@dimen/len_64"
+                android:layout_height="@dimen/len_64"
+                android:src="@drawable/ic_notifications"
+                android:padding="@dimen/len_6"
+                android:layout_gravity="center"
+                />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/len_64"
+            >
+            <ImageView
+                android:layout_width="@dimen/len_64"
+                android:layout_height="@dimen/len_64"
+                android:src="@drawable/ic_help"
+                android:layout_gravity="center"
+
+                android:padding="@dimen/len_6"
+                />
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.epsilonpros.ipsolution.views.TextViewTeach
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_four_description"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/font_16"
+        android:gravity="center"
+        android:singleLine="true"
+        android:ellipsize="middle"
+        app:police="roboto_light"
+        />
+
+    <com.epsilonpros.ipsolution.views.FancyButtonBK
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/len_128"
+        android:layout_marginTop="@dimen/len_56"
+        android:text="Lancez-vous!"
+        app:fb_textColor="@color/white"
+        app:fb_defaultColor="@color/colorAccent"
+        app:fb_focusColor="@color/colorAccent"
+        />
+    <net.qiujuer.genius.ui.widget.CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/white_alpha_144"
+        android:text="S'affiche au demarrage"
+        android:layout_marginTop="@dimen/len_16"
+        android:checked="true"
+        app:gBorderSize="@dimen/len_1"
+        app:gMarkColor="@color/colorAccent"
+        app:gMarkSize="@dimen/len_24"
+        />
+</LinearLayout>

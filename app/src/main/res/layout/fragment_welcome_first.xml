@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/viewRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/wavesRoot"
+        android:layout_width="@dimen/len_256"
+        android:layout_height="@dimen/len_256"
+        android:layout_margin="@dimen/len_16"
+        android:layout_centerInParent="true">
+
+        <com.epsilonpros.ipsolution.views.RoundWaveView
+            android:id="@+id/waveView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:pointCount="6"
+            app:useAnimation="true"
+            app:fillColor="@color/colorAccent"
+            app:speedInMillis="1000"
+            />
+        <com.epsilonpros.ipsolution.views.RoundWaveView
+            android:id="@+id/waveView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/len_6"
+            app:pointCount="6"
+            app:useAnimation="true"
+            app:fillColor="@color/colorAccent"
+            app:speedInMillis="2000"
+            />
+        <com.epsilonpros.ipsolution.views.RoundWaveView
+            android:id="@+id/waveView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/len_10"
+            app:pointCount="6"
+            app:useAnimation="true"
+            app:speedInMillis="3000"
+            app:fillColor="@color/colorAccent"
+            />
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/wavesRoot"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        >
+        <com.epsilonpros.ipsolution.views.TextViewTeach
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_first_titre"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_28"
+            app:police="roboto_bold"
+            />
+        <com.epsilonpros.ipsolution.views.TextViewTeach
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mobile v1.0"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/font_20"
+            app:police="roboto_light"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

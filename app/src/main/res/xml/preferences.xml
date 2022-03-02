@@ -1,0 +1,18 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="notificationEnabled"
+        android:summary="@string/enable_disable"
+        android:title="@string/enable_switch" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="notificationVisibleInLockScreen"
+        android:summary="@string/lockscreen_summary"
+        android:title="@string/lockscreen_title" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="notificationLowPower"
+        android:summary="@string/lowpower_summary"
+        android:title="@string/lowpower_title" />
+
+</PreferenceScreen>
